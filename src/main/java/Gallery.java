@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.UUID;
 
 public class Gallery {
 
@@ -15,7 +16,7 @@ public class Gallery {
     // collection of Artwork in the gallery is represented by an array list called GalleryArtwork.
     // The ArrayList contains <Artwork> so each element in the GalleryArtwork
     // has the characteristics of an Artwork class- i.e. title, artist, price, nft
-    private ArrayList<Artwork> GalleryArtwork = new ArrayList<>();
+   private ArrayList<Artwork> GalleryArtwork = new ArrayList<>();
 
 
 
@@ -90,4 +91,45 @@ public class Gallery {
                 ", GalleryArtwork=" + GalleryArtwork +
                 '}';
     }
+
+    //  Extension taskStock take method [IN PROGRESS ] -------------------------------------------------------------------------------
+
+    // Give the Gallery the ability to calculate the value of its collection with a stock_take() method.
+
+//
+//    public String stock_takeMethod(Gallery gallery)
+//
+//    {   gallery.getGalleryArtwork();
+//        gallery.getGalleryArtwork().indexOf("price");
+//        System.out.println (gallery.getGalleryArtwork().indexOf("price"));
+//        System.out.println(gallery.getGalleryArtwork());
+//
+//
+//
+//        return ("fsd");
+
+//
+//        int sum = 0;
+//
+//        for (int i = 0; i == gallery.getGalleryArtwork().size() - 1; i++) {
+//
+//            System.out.println(gallery.getGalleryArtwork().size() - 1);
+//
+//
+//            sum = sum + gallery.getGalleryArtwork().get(i);
+
+
+          //  System.out.println(sum);
+
+//        }
+//
+//        return (sum);
+
+
+
+
+
+
+
+
 }

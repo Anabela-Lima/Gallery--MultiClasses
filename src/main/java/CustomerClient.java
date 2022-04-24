@@ -53,13 +53,17 @@ public class CustomerClient{
    */
         Customer customer1 = new Customer("Ana Bela", 2000);
         Gallery gallery1 = new Gallery( "Paula Galeria", 500);
+
         Artwork Artwork1 = new Artwork("Doreatta", "Phillip", 250, UUID.randomUUID());
         Artwork Artwork2 = new Artwork("Carlina", "Rodi", 500, UUID.randomUUID());
         Artwork Artwork3 = new Artwork("RedVelvet", "Rose", 100, UUID.randomUUID());
         Artwork Artwork4 = new Artwork("Abstract Day", "Polonia", 50, UUID.randomUUID());
         Artwork Artwork5 = new Artwork("Timeless counter", "Streveji", 1750, UUID.randomUUID());
         Artwork Artwork6 = new Artwork("Dystopia", "Ester", 4500, UUID.randomUUID());
+        Artwork Artwork7 = new Artwork("Summer Landscape", "Phillip", 350, UUID.randomUUID());
+
         Artist Artist1 = new Artist("Phillip");
+
 
 
         //    Buying Artwork from Gallery Method------------------------------
@@ -97,11 +101,10 @@ public class CustomerClient{
         gallery1.getGalleryArtwork().add(Artwork5);
         gallery1.getGalleryArtwork().add(Artwork6);
 
-        // Printing Gallery1 Collection [IN PROGRESS]------------------------------------------------------------------
-
-        // IN PROGRESS- NEED TO PRINT GALLERY COLLECTION
+    // Printing Gallery1 Collection -------------------------------------------------------------------------------
 
 
+        System.out.println(gallery1.getGalleryArtwork());
 
 
 //   ------------------------------------------------------------------------------------------------------------------
@@ -111,6 +114,10 @@ public class CustomerClient{
 //    recall: An Artist should have a name and a collection of artwork (i.e a list of artwork they have personally made)
 
         Artist1.getArtistArtwork().add(Artwork1);
+        Artist1.getArtistArtwork().add(Artwork7);
+
+        System.out.println(Artist1.getArtistArtwork());
+
 
 
         //   Print ----------------------------------------------------------------------------------------------
@@ -121,12 +128,20 @@ public class CustomerClient{
 
         //  Customer 1 buys a painting :
 
-        System.out.println( customer1.BuyingMethod(Artwork1,customer1));
+        System.out.println( customer1.BuyingMethod(customer1,Artwork1,gallery1));
 
         // gallery1 amount after purchase
         System.out.println( gallery1.TillMethod(gallery1.getTill(),Artwork1,gallery1 ));
 
-        // printing customer collection: [IN PROGRESS ]
+
+        // checking Gallery value- for gallery 1- created a stock method that adds price of each painting;
+
+//        System.out.println(gallery1.stock_takeMethod(gallery1));  [IN PROGRESS ]
+
+
+
+
+
 
 
 
